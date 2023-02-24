@@ -1,0 +1,41 @@
+html, body {
+    background-image: url('/img/galaxy.jpg');
+    margin: 0;
+    position: relative;
+    
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+.wrapper{
+    width: 25%;
+    position: absolute;
+    left: 40%;
+    top: 70%;
+}
+.rocket{
+    width: 50%;
+    height: 40%;
+    border-radius: 50%;
+    animation-name: rocket;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rocket{
+    0% {
+        transform: translateY(-10px);
+    }
+    45% {
+        transform: translate(-0px, -150px) ;
+    }
+    
+    85% {
+        transform: translate(-250px, -600px) rotateZ(-45deg);
+    }
+    100% {
+        transform: translate(-300px, -650px) ;
+    }
+
+}
